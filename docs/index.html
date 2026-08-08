@@ -51,20 +51,20 @@
     <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
     
     <div class="install-section">
-        <h3>1. Standard CYD (ILI9341)</h3>
-        <p style="font-size: 0.9em; margin: 0;">Most common CYD boards (Micro-USB or standard USB-C).</p>
+        <h3>1. Original CYD (Dual USB / ILI9341)</h3>
+        <p style="font-size: 0.9em; margin: 0;">The classic CYD with two USB ports.</p>
         <esp-web-install-button manifest="./manifest-ili9341.json"></esp-web-install-button>
     </div>
 
     <div class="install-section">
-        <h3>2. USB-C CYD2 (ST7789)</h3>
-        <p style="font-size: 0.9em; margin: 0;">Use this if the Standard version shows inverted colors or the screen wraps around horizontally.</p>
+        <h3>2. CYD2 (Single USB-C / ST7789)</h3>
+        <p style="font-size: 0.9em; margin: 0;">The newer CYD with a single USB-C port. Use this if the Original version shows inverted colors or the screen wraps around horizontally.</p>
         <esp-web-install-button manifest="./manifest-st7789.json"></esp-web-install-button>
     </div>
 
     <div class="install-section">
-        <h3>3. Standard CYD (Inverted Colors)</h3>
-        <p style="font-size: 0.9em; margin: 0;">Use this if the Standard version works but the colors are inverted (e.g. white background instead of black).</p>
+        <h3>3. Original CYD (Inverted Colors)</h3>
+        <p style="font-size: 0.9em; margin: 0;">Use this if your board has dual USBs but the colors are inverted (e.g. white background instead of black).</p>
         <esp-web-install-button manifest="./manifest-ili9341-inv.json"></esp-web-install-button>
     </div>
 
