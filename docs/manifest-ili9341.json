@@ -1,0 +1,1 @@
+{"name": "Baiyosou (Standard CYD)","version": "1.0.0","builds": [{"chipFamily": "ESP32","parts": [{"path": "Baiyosou-ILI9341.bin","offset": 0}]}]}

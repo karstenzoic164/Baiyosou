@@ -1,0 +1,1 @@
+{"name": "Baiyosou (Inverted CYD)","version": "1.0.0","builds": [{"chipFamily": "ESP32","parts": [{"path": "Baiyosou-ILI9341-Inverted.bin","offset": 0}]}]}

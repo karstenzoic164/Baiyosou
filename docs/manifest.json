@@ -1,1 +1,0 @@
-{"name": "Baiyosou","version": "1.0.0","builds": [{"chipFamily": "ESP32","parts": [{"path": "Baiyosou-full-4mb.bin","offset": 0}]}]}

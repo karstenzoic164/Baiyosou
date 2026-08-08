@@ -22,8 +22,21 @@
         }
         h1 { color: #fff; }
         p { line-height: 1.5; color: #ccc; }
+        .install-section {
+            background: #222;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            text-align: left;
+        }
+        .install-section h3 {
+            margin-top: 0;
+            color: #4CAF50;
+        }
         esp-web-install-button {
-            margin-top: 2rem;
+            display: block;
+            margin-top: 1rem;
+            text-align: center;
         }
     </style>
 </head>
@@ -33,13 +46,30 @@
     
     <img src="demo.gif" class="demo" alt="Baiyosou Demo">
     
-    <p>Connect your CYD board via USB, click the button below, select the correct COM port, and click "Install".</p>
+    <p>Connect your CYD board via USB, choose your board type below, select the correct COM port, and click "Install".</p>
     
     <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
-    <esp-web-install-button manifest="./manifest.json"></esp-web-install-button>
+    
+    <div class="install-section">
+        <h3>1. Standard CYD (ILI9341)</h3>
+        <p style="font-size: 0.9em; margin: 0;">Most common CYD boards (Micro-USB or standard USB-C).</p>
+        <esp-web-install-button manifest="./manifest-ili9341.json"></esp-web-install-button>
+    </div>
+
+    <div class="install-section">
+        <h3>2. USB-C CYD2 (ST7789)</h3>
+        <p style="font-size: 0.9em; margin: 0;">Use this if the Standard version shows inverted colors or the screen wraps around horizontally.</p>
+        <esp-web-install-button manifest="./manifest-st7789.json"></esp-web-install-button>
+    </div>
+
+    <div class="install-section">
+        <h3>3. Standard CYD (Inverted Colors)</h3>
+        <p style="font-size: 0.9em; margin: 0;">Use this if the Standard version works but the colors are inverted (e.g. white background instead of black).</p>
+        <esp-web-install-button manifest="./manifest-ili9341-inv.json"></esp-web-install-button>
+    </div>
 
     <p style="font-size: 0.8rem; margin-top: 3rem; color: #666;">
-        Requires a Web Serial compatible browser (Chrome, Edge, Opera).
+        Requires a Web Serial compatible browser (Chrome, Edge, Opera). Firefox is not supported.
     </p>
 </body>
 </html>

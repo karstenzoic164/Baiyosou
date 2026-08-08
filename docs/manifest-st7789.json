@@ -1,0 +1,1 @@
+{"name": "Baiyosou (USB-C CYD)","version": "1.0.0","builds": [{"chipFamily": "ESP32","parts": [{"path": "Baiyosou-ST7789.bin","offset": 0}]}]}
